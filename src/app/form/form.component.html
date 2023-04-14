@@ -5,7 +5,6 @@
     <input 
     type="text"
     class="input-field"
-    (input)="enableButton()"
     [(ngModel)] = 'username'
     >
     <p class="output-username">{{username}}</p>
@@ -16,4 +15,19 @@
     >Submit</button>
 
 </div>
-   
+
+
+<!-- Max's Solution 
+
+<label>Username </label>
+<input 
+type="text"
+class="input-field"
+[(ngModel)] = 'username'
+>
+<p class="output-username">{{username}}</p>
+
+<button 
+(click)="username = ''"
+[disabled]="username === ''"
+>Submit</button> -->
