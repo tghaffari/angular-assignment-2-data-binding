@@ -1,0 +1,19 @@
+<div class="container">
+    <h1> Assignment Solution</h1>
+
+    <label>Username </label>
+    <input 
+    type="text"
+    class="input-field"
+    (input)="enableButton()"
+    [(ngModel)] = 'username'
+    >
+    <p class="output-username">{{username}}</p>
+
+    <button 
+    (click)="onClick()"
+    [disabled]="!clickable"
+    >Submit</button>
+
+</div>
+   

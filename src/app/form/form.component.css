@@ -1,0 +1,19 @@
+.container {
+    padding: 2rem;
+    margin: auto;
+}
+.input-field {
+    display: block;
+}
+
+.output-username {
+    color: turquoise
+}
+
+button:hover {
+    cursor: pointer
+}
+
+button:disabled {
+    cursor: not-allowed;
+}
